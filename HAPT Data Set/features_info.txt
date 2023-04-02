@@ -1,0 +1,140 @@
+Feature Selection 
+=================
+
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ 
+and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. 
+Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency 
+of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration 
+signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 
+Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals 
+(tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated 
+using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, 
+fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate 
+frequency domain signals). 
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+tBodyAcc-XYZ
+tGravityAcc-XYZ
+tBodyAccJerk-XYZ
+tBodyGyro-XYZ
+tBodyGyroJerk-XYZ
+tBodyAccMag
+tGravityAccMag
+tBodyAccJerkMag
+tBodyGyroMag
+tBodyGyroJerkMag
+fBodyAcc-XYZ
+fBodyAccJerk-XYZ
+fBodyGyro-XYZ
+fBodyAccMag
+fBodyAccJerkMag
+fBodyGyroMag
+fBodyGyroJerkMag
+
+The set of variables that were estimated from these signals are: 
+
+mean(): Mean value
+std(): Standard deviation
+mad(): Median absolute deviation 
+max(): Largest value in array
+min(): Smallest value in array
+sma(): Signal magnitude area
+energy(): Energy measure. Sum of the squares divided by the number of values. 
+iqr(): Interquartile range 
+entropy(): Signal entropy
+arCoeff(): Autorregresion coefficients with Burg order equal to 4
+correlation(): correlation coefficient between two signals
+maxInds(): index of the frequency component with largest magnitude
+meanFreq(): Weighted average of the frequency components to obtain a mean frequency
+skewness(): skewness of the frequency domain signal 
+kurtosis(): kurtosis of the frequency domain signal 
+bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
+angle(): Angle between to vectors.
+
+Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
+
+gravityMean
+tBodyAccMean
+tBodyAccJerkMean
+tBodyGyroMean
+tBodyGyroJerkMean
+
+The complete list of variables of each feature vector is available in 'features.txt'
+
+
+Translate
+=============================================================================================
+Las características seleccionadas para esta base de datos proceden de las señales brutas triaxiales del 
+acelerómetro y el giroscopio tAcc-XYZ y tGyro-XYZ. Estas señales en el dominio del tiempo (prefijo "t" 
+para denotar el tiempo) se capturaron a una frecuencia constante de 50 Hz.  A continuación, se filtraron 
+utilizando un filtro de mediana y un filtro Butterworth de paso bajo de 3er orden con una frecuencia de esquina 
+de 20 Hz para eliminar el ruido. Del mismo modo, la señal de aceleración se separó en señales de aceleración del 
+cuerpo y de la gravedad (tBodyAcc-XYZ y tGravityAcc-XYZ) utilizando otro filtro Butterworth de paso bajo con una 
+frecuencia de esquina de 0,3 Hz. 
+
+Posteriormente, la aceleración lineal y la velocidad angular del cuerpo se derivaron en el tiempo para obtener 
+las señales Jerk (tBodyAccJerk-XYZ y tBodyGyroJerk-XYZ). También se calculó la magnitud de estas señales 
+tridimensionales utilizando la norma euclidiana (tBodyAccMag, tGravityAccMag, tBod AccJerkMag, tBodyGyroMag, 
+tBodyGyroJerkMag). 
+
+Por último, se aplicó una transformada rápida de Fourier (FFT) a algunas de estas señales para obtener 
+fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Nótese la "f" 
+para indicar las señales en el dominio de la frecuencia). 
+
+Estas señales se utilizaron para estimar las variables del vector de características de cada patrón: 
+'-XYZ' se utiliza para indicar señales triaxiales en las direcciones X, Y y Z.
+
+tBodyAcc-XYZ
+tGravityAcc-XYZ
+tBodyAccJerk-XYZ
+tBodyGyro-XYZ
+tBodyGyroJerk-XYZ
+tBodyAccMag
+tGravityAccMag
+tBodyAccJerkMag
+tBodyGyroMag
+tBodyGyroJerkMag
+fBodyAcc-XYZ
+fBodyAccJerk-XYZ
+fBodyGyro-XYZ
+fBodyAccMag
+fBodyAccJerkMag
+fBodyGyroMag
+fBodyGyroJerkMag
+
+El conjunto de variables que se estimaron a partir de estas señales son: 
+
+mean(): Valor medio
+std(): Desviación típica
+mad(): Desviación absoluta mediana 
+max(): Mayor valor de la matriz
+min(): Valor más pequeño de la matriz
+sma(): Área de magnitud de la señal
+energy(): Medida de energía. Suma de los cuadrados dividida por el número de valores. 
+iqr(): Rango intercuartílico 
+entropy(): Entropía de la señal
+arCoeff(): Coeficientes de autorregresión con orden Burg igual a 4
+correlation(): Coeficiente de correlación entre dos señales
+maxInds(): índice de la componente de frecuencia de mayor magnitud
+meanFreq(): Media ponderada de las componentes de frecuencia para obtener una frecuencia media
+skewness(): asimetría de la señal en el dominio de la frecuencia 
+kurtosis(): curtosis de la señal en el dominio de la frecuencia 
+bandasEnergy(): Energía de un intervalo de frecuencia dentro de los 64 bins de la FFT de cada ventana.
+ángle(): Ángulo entre dos vectores.
+
+Vectores adicionales obtenidos promediando las señales en una muestra de ventana de señal. 
+Se utilizan en la variable angle():
+
+gravityMean
+tBodyAccMean
+tBodyAccJerkMean
+tBodyGyroMean
+tBodyGyroJerkMean
+
+La lista completa de variables de cada vector de características está disponible en 'features.txt'
